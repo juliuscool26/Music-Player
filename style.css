@@ -23,7 +23,18 @@ body{
     width: 300px;
     position:relative;
     margin-top: 10%;
+    /* animation: rotation 4s infinite linear; */
+    animation: none;
 }
+
+@keyframes rotation {
+    from {
+      transform: rotate(359deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
 
 /* canvas{
     background-image: url("img/banner.png");
