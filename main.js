@@ -1,16 +1,24 @@
-// var circle = document.getElementById("audio-player");
-// var ctx = circle.getContext("2d");
-// ctx.lineWidth=5;
-// ctx.fillstyle='#D3D3D3';
-// ctx.beginPath();
-// ctx.arc(100, 75, 50, 1, 3 * Math.PI);
-// ctx.stroke();
+var canvas= document.querySelector('canvas');
+var c = canvas.getContext('2d');
+c.lineWidth=5;
 
-// var seek = document.querySelector(".seek-bar");
-// var ctx = seek.getContext("2d");
-// ctx.fillstyle="#0000FF";
-// ctx.lineWidth=5;
-// ctx.beginPath();
-// ctx.arc(100, 75, 50, 1, .5 * Math.PI);
-// ctx.fill()
-// ctx.stroke();
+// loadBar
+c.beginPath();
+c.strokeStyle = "grey";
+c.arc(canvas.width/2, canvas.height/2, 200, 0,Math.PI*2,false);
+c.stroke();
+
+// coverArt
+// var image=new Image();
+// image.src="img/logo.png";
+// image.onload=function(){
+//     var pat=c.createPattern(image,"no-repeat");
+//     c.fillStyle=pat;
+//     c.fill();
+// }
+
+// SeekBar
+c.beginPath();
+c.strokeStyle = "#4169e1";
+c.arc(canvas.width/2, canvas.height/2, 200,Math.PI,Math.PI*3/2,false);
+c.stroke();

@@ -15,62 +15,28 @@ body{
     top:0;
     left:0;
 }
-
-#player-img{
+canvas{
+  margin-top: 10%;
+  position:relative;
+  filter: none;
+  border: 1px solid black;
+}
+/* #player-img{
     filter: none;
     border-radius: 50%;
     height: 300px;
     width: 300px;
-    position:relative;
+    position:absolute;
     margin-top: 10%;
-    /* animation: rotation 4s infinite linear; */
+    animation: rotation 4s infinite linear;
     animation: none;
-}
+} */
 
-@keyframes rotation {
+/* @keyframes rotation {
     from {
       transform: rotate(359deg);
     }
     to {
       transform: rotate(0deg);
     }
-  }
-
-/* canvas{
-    background-image: url("img/banner.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    border-radius: 50%;
-} */
-
-/* #audio-player{
-    filter:none;
-    color:#fff;
-    margin-top: 5%;
-    margin-left:25%;
-    height: auto;
-    width:700px;
-    border: 2px solid black;
-    position: fixed;
-    top: 0;
-    left: 0;
-} */
-
-/* .seek-bar{
-    filter: none;
-    color: royalblue;
-    width:300px;
-    height:300px;
-    border: 5px solid grey;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-} */
-
-/* #fill{
-    position:absolute;
-    width:300px;
-    height:300px;
-    border: 5px solid royalblue;
-    border-radius:50%; 
-} */
+  } */
