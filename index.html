@@ -10,24 +10,45 @@
 </head>
 <body>
     <div id="bg-wrapper"></div>
-    <div id="audio-wrapper">
-        <!-- <img id="player-img"src="img/banner.png"> -->
-        <canvas height="300" width="300"></canvas>
-        <div class="playlist">
-            <div class="audio-conntrols">
-                <button><i class="fas fa-step-backward"></i></button>
-                <button><i class="fas fa-play"></i></button>
-                <button><i class="fas fa-stop"></i></button>
-                <button><i class="fas fa-step-forward"></i></button>
-                <button><i class="fas fa-volume-up"></i></button>
-                <input class="volume" type="range">
-                <ul>
-                    <li><h4>Title</h4><p>Artist</p><p>0:00</p></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <div class="app">
+    <div id="music-player">
+        <img id="cover-art" src="img/cover-art-default.svg" alt="cover-art" height="280px" width="280px">
+        <svg 
+            class="track-outline"
+            width="453"
+            height="453"
+            viewbox="0 0 453 435"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <circle
+                cx="226.5"
+                cy="226.5"
+                r="216.5"
+                stroke="white"
+                stroke-width="20"
+            />
+        </svg>
 
+        <svg 
+            class="moving-outline"
+            width="453"
+            height="453"
+            viewbox="0 0 453 435"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <circle
+                cx="226.5"
+                cy="226.5"
+                r="216.5"
+                stroke="#018EBA"
+                stroke-width="20"
+            />
+        </svg>
+
+    </div>
+    </div>
 
     
     
