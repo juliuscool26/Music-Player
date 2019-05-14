@@ -7,9 +7,33 @@ const app = ()=>{
     
     // Length of outline
     const outlineLength = outline.getTotalLength();
-    
+
     //Duration
-    let duration = 
+    let songDuration = song.duration;
+    console.log(songDuration)
+
+    outline.style.strokeDasharray = outlineLength;
+    outline.style.strokeDashoffset=400;
+
+    //Play music
+    play.addEventListener('click',() => {
+        if (song.paused){
+            song.play();
+        }else{
+            song.pause();
+        }
+        
+    });
+    
+    song.ontimeupdate = () => {
+        let currentTime=song.currentTime;
+
+    }
+
+    // Progress bar
+    let progress = outlineLength;
+    
+
 }
 
 
